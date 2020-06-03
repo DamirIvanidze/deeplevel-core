@@ -49,19 +49,19 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
 /**
  * The code that runs during plugin activation
  */
-function activate_alecaddd_plugin() {
+function activate_deeplevel_core() {
     DLC\Base\Activate::activate();
 }
-register_activation_hook( __FILE__, 'activate_alecaddd_plugin' );
+register_activation_hook( __FILE__, 'activate_deeplevel_core' );
 
 
 /**
  * The code that runs during plugin deactivation
  */
-function deactivate_alecaddd_plugin() {
+function deactivate_deeplevel_core() {
     DLC\Base\Deactivate::deactivate();
 }
-register_deactivation_hook( __FILE__, 'deactivate_alecaddd_plugin' );
+register_deactivation_hook( __FILE__, 'deactivate_deeplevel_core' );
 
 
 /**
