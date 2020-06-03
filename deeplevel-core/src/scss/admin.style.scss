@@ -1,0 +1,127 @@
+.wrap{
+	&__container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		@media only screen and (max-width: 992px) {
+			flex-direction: column;
+		}
+	}
+
+	&__column{
+		width: 50%;
+		padding: 20px;
+
+		@media only screen and (max-width: 992px) {
+			width: 100%;
+		}
+
+		table th,
+		table td{
+			@media only screen and (max-width: 992px) {
+				display: inline-block;
+				width: 45%;
+			}
+		}
+	}
+}
+
+
+
+
+$on: #0073aa;
+$off: #8c8c8c;
+
+@mixin center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin userSelect($value) {
+	user-select: $value;
+}
+
+@mixin ui-toggle($height, $on, $off) {
+	margin: 0;
+	padding: 0;
+
+	input[type='checkbox'] {
+		display: none;
+
+		&:checked + label {
+			border-color: $on;
+			background: $on;
+			box-shadow: inset 0 0 0 #{$height / 2} $on;
+
+			> div {
+				margin-left: $height;
+			}
+		}
+
+		&:disabled + label{ opacity: .6; }
+	}
+
+	label {
+		transition: all 200ms ease;
+		display: inline-block;
+		position: relative;
+
+		@include userSelect(none);
+
+		background: $off;
+		box-shadow: inset 0 0 0 0 $on;
+		border: 2px solid $off;
+		border-radius: $height + 2;
+		width: $height * 2;
+		height: $height;
+
+		div {
+			transition: all 200ms ease;
+			background: #FFFFFF;
+			width: $height;
+			height: $height;
+			border-radius: $height / 2;
+		}
+
+		&:hover,
+		& > div:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+div.ui-toggle {
+	@include ui-toggle(20px, $on, $off);
+}
+
+
+
+
+
+/**
+ * FORM
+ */
+
+.form-status{
+	position: relative;
+}
+
+.spinner{
+	float: none;
+	margin: 0;
+	position: relative;
+	left: 10px;
+
+	&.active{visibility: visible;}
+}
+
+.status{
+	font-size: 12px;
+    position: absolute;
+    bottom: -15px;
+    opacity: .6;
+    display: none;
+}

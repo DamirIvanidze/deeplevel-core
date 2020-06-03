@@ -1,0 +1,17 @@
+{
+    "name": "damir/deeplevel-core",
+    "description": "Plugin that adds all things needed by DeepLevel theme",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "damir.ivanidze",
+            "email": "damir.ivanidze@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"DLC\\": "./inc"}
+    }
+}
