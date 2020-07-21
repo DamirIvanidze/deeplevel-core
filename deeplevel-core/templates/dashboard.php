@@ -6,7 +6,7 @@
         <?
             $output = get_option( 'deeplevel_core_settings' );
 
-            DLC\Api\SettingsApiPlugin::vardump( $output );
+            // DLC\Api\SettingsApiPlugin::vardump( $output );
         ?>
 
         <div class="wrap__container">
