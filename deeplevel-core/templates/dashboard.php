@@ -26,6 +26,7 @@
                                 [ 'title' => 'Mixitup Pagination', 'name' => 'mixitup_pagination' ],
                                 [ 'title' => 'TWBS navwalker', 'name' => 'navwalker' ],
                                 [ 'title' => 'Masked input', 'name' => 'maskedinput' ],
+                                [ 'title' => 'Fancybox 3', 'name' => 'fancybox' ],
                             ];
 
                             foreach ( $modules_array as $key => $value ) {
