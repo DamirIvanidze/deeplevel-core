@@ -21,12 +21,7 @@
                                 [ 'title' => 'Lozad (Lazy Load)', 'name' => 'lozad' ],
                                 [ 'title' => 'Swiper Slider', 'name' => 'swiper_slider' ],
                                 [ 'title' => 'Typographer', 'name' => 'typographer' ],
-                                [ 'title' => 'Mixitup', 'name' => 'mixitup' ],
-                                [ 'title' => 'Mixitup Multifilter', 'name' => 'mixitup_multifilter' ],
-                                [ 'title' => 'Mixitup Pagination', 'name' => 'mixitup_pagination' ],
-                                [ 'title' => 'TWBS navwalker', 'name' => 'navwalker' ],
                                 [ 'title' => 'Masked input', 'name' => 'maskedinput' ],
-                                [ 'title' => 'Fancybox 3', 'name' => 'fancybox' ],
                             ];
 
                             foreach ( $modules_array as $key => $value ) {
@@ -58,21 +53,20 @@
             </div>
 
             <div class="wrap__column">
-                <h2>TWBS</h2>
+                <h2>Modules</h2>
 
                 <table class="form-table" role="presentation">
                     <tbody>
                         <?
-                            $twbs_array = [
-                                [ 'title' => 'Alert', 'name' => 'twbs_alert' ],
-                                [ 'title' => 'Tab', 'name' => 'twbs_tab' ],
-                                [ 'title' => 'Collapse', 'name' => 'twbs_collapse' ],
-                                [ 'title' => 'Dropdown', 'name' => 'twbs_dropdown' ],
-                                [ 'title' => 'Modal', 'name' => 'twbs_modal' ],
-                                [ 'title' => 'Toast', 'name' => 'twbs_toast' ],
+                            $modules_array = [
+                                [ 'title' => 'Mixitup', 'name' => 'mixitup' ],
+                                [ 'title' => 'Mixitup Multifilter', 'name' => 'mixitup_multifilter' ],
+                                [ 'title' => 'Mixitup Pagination', 'name' => 'mixitup_pagination' ],
+                                [ 'title' => 'TWBS navwalker', 'name' => 'navwalker' ],
+                                [ 'title' => 'Fancybox 3', 'name' => 'fancybox' ],
                             ];
 
-                            foreach ( $twbs_array as $key => $value ) {
+                            foreach ( $modules_array as $key => $value ) {
                         ?>
                              <tr class="form-group ui-toggle">
                                 <th scope="row">
@@ -94,8 +88,10 @@
                                 </td>
                             </tr>
                         <?}?>
+
                     </tbody>
                 </table>
+
             </div>
 
             <div class="wrap__column">
